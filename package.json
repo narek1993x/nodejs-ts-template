@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc -p .",
-    "start": "node dist/index.js",
-    "dev": "yarn build & concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+    "start": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
   },
   "dependencies": {
     "axios": "^1.4.0",
